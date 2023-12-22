@@ -7,6 +7,7 @@ class UserService {
   async init() {
     const id = await this.getId();
     window.userId = id;
+    console.log(window.userId);
     console.warn('UserID: ', id);
   }
 
